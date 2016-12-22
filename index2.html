@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>City Update</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th colspan="2">City Information</th>
+			</tr>
+			<tr>
+				<th>City Name</th>
+				<td>{{city_name}}</td>
+			</tr>
+			<!--<tr>
+				<th>Country</th>
+				<td>{{country}}</td>
+			</tr>-->
+			<tr>
+				<th>ID</th>
+				<td>{{city_id}}</td>
+			</tr>
+				<th>Time</th>
+				<td>{{time}}</td>
+			</tr>
+				<th>Latitude</th>	
+				<td>{{lat}}</td>
+			</tr>
+				<th>Longitude</th>
+				<td>{{long1}}</td>
+			</tr>
+		</table>
+		<p></p>
+		<table>
+			<tr>
+				<th colspan="2">Weather Condition</th>
+			</tr>
+			<tr>
+				<th>Clouds(%)</th>
+				<td>{{clouds}}</td>
+			</tr>
+			<tr>
+				<th>Humidity(%)</th>
+				<td>{{humidity}}</td>
+			</tr>
+			<tr>
+				<th>Rain</th>
+				<td>{{rain}}</td>
+			</tr>
+				<th>Tempearature(min)</th>
+				<td>{{temp_min}}</td>
+			</tr>
+			<tr>
+				<th>Temperature(max)</th>	
+				<td>{{temp_max}}</td>
+			</tr>
+		</table>
+		<p></p>
+		<table>
+			<tr>
+				<th>
+					<form action="/tomorrow_forecast/" method="post">
+						<p>Get record for next 24 hours</p>
+						<input type="submit" name="week" value="weather forecast for next 24 hours"/>
+					</form>
+				</th>
+				<th>
+					<form action="/sevenday_forecast/" method="post">
+						<p>Get record for week</p>
+						<input type="submit" name="tomorrow" value="weather forecast for a week"/>
+					</form>
+				</th>
+			</tr>
+		</table>
+	</body>
+</html>
